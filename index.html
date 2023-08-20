@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>SIGMA AI TOOLS</title>
+</head>
+<body>
+    <header>
+        <div class="logo">SIGMA AI TOOLS</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li class="menu-category">Menu
+                    <ul class="categories" id="navCategories">
+                        <!-- Categories in the navigation menu will be added dynamically -->
+                    </ul>
+                </li>
+                <li class="menu-category">Categories
+                    <ul class="categories">
+                        <li><a href="#">Image AI</a></li>
+                        <li><a href="#">Video AI</a></li>
+                        <li><a href="#">Text AI</a></li>
+                        <li><a href="#">Editing AI</a></li>
+                        <li><a href="#">Code AI</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search tools...">
+        </div>
+        <div class="tools" id="toolsContainer">
+            <!-- Tool cards will be dynamically added here -->
+        </div>
+    </main>
+    
+    <aside class="sidebar">
+        <div class="form-container">
+            <h3>Add New Tool</h3>
+            <form id="addToolForm">
+                <input type="text" id="toolName" placeholder="Tool Name" required>
+                <input type="text" id="toolUsage" placeholder="Tool Usage" required>
+                <input type="url" id="toolLink" placeholder="Tool Link" required>
+                <select id="toolCategory" required>
+                    <option value="" disabled selected>Select Category</option>
+                    <!-- Categories will be dynamically added here -->
+                </select>
+            </form>
+        </div>
+        <div class="buttons-container">
+            <button type="button" id="addToolButton">Add Tool</button>
+            <button id="clearFormButton">Clear Form</button>
+        </div>
+    </aside>
+</body>
+</html>
